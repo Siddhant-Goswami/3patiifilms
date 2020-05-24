@@ -1,0 +1,114 @@
+// border radius
+@mixin border-radius($radius) {
+	 -webkit-border-radius: $radius;
+		-moz-border-radius: $radius;
+		 -ms-border-radius: $radius;
+			 border-radius: $radius;
+}
+// transition
+@mixin transition($option, $time, $style: ease-in-out){
+	-webkit-transition: $option $time $style;
+	   -moz-transition: $option $time $style;
+			transition: $option $time $style; 
+}
+// transform
+@mixin transform($value){
+	-webkit-transform: $value;
+	   -moz-transform: $value;
+	    -ms-transform: $value;
+			transform: $value; 
+}
+
+// all fonts related mixin
+@mixin raleway($value) {
+	font-family: $raleway;
+	font-weight: $value;
+}
+@mixin opensans($value) {
+	font-family: $opensans;
+	font-weight: $value;
+}
+@mixin font_fswhc($family, $size, $weight, $height, $color){
+	font-family: $family;
+	font-size: $size;
+	font-weight: $weight;
+	line-height: $height;
+	color: $color;
+}
+
+
+// flexbox center
+@mixin flexbox_center(){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+// background opacity
+@mixin background-opacity($color, $opacity: 0.3) {
+    background: $color; /* The Fallback */
+    background: rgba($color, $opacity);
+}
+
+
+
+
+
+
+
+
+
+// <!-- <div class="movie-time-down">
+//     <div class="time-down"></div>
+// </div> -->
+
+
+// /*---------------------------------------------------
+// 	2.0 - timer down style
+// ----------------------------------------------------*/
+// .movie-time-down {
+// 	.table-cell {
+// 		display: inline-block;
+// 		text-align: center;
+// 		position: relative;
+// 		margin: 0 11px;
+// 		.tab-val{
+// 			height: 40px;
+// 			width: 45px;
+// 			line-height: 40px;
+// 			margin-bottom: 6px;
+// 		}
+// 		&:after {
+// 			content: ':';
+// 			position: absolute;
+// 			height: 40px;
+// 			width: 40px;
+// 			right: -31px;
+// 		    top: 6px;
+// 		    font-size: 20px;
+// 		}
+// 	}
+// 	.day .tab-val{
+// 		background-color: rgba( 255, 171, 0, 0.502);
+// 	}
+// 	.hour .tab-val{
+// 		background-color: rgba( 189, 193, 84, 0.502);
+// 	}
+// 	.minute .tab-val{
+// 		background-color: rgba( 21, 101, 181, 0.502);
+// 	}
+// 	.second .tab-val{
+// 		background-color: rgba( 38, 241, 200, 0.502);
+// 	}
+// }
+// .table-cell:last-child:after {
+// 	display: none;
+// }
+
+// $('.time-down').syotimer({
+//     year: 2019,
+//     month: 12,
+//     day: 9,
+//     hour: 20,
+//     minute: 30
+// });

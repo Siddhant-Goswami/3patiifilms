@@ -1,0 +1,418 @@
+/*-------------------------
+	1.0 - General Styles
+--------------------------*/
+body {
+	font-family: $opensans;
+	line-height: 100%;
+	font-size: 14px;
+	line-height: 26px;
+	color: $lightblack;
+	
+}
+h1,h2,h3,h4,h5,h6 {
+	font-family: $ubuntu;
+	color: $deepblack;
+}
+h1 {
+	font-size: 40px;
+    font-weight: 400;
+}
+h2 {
+	font-size: 36px;
+    font-weight: 400;
+}
+h3 {
+	font-size: 30px;
+    font-weight: 400;
+}
+h4 {
+	font-size: 24px;
+    font-weight: 400;
+}
+h5 {
+	font-size: 22px;
+    font-weight: 400;
+}
+h6 {
+	font-size: 14px;
+}
+p {
+	font-family: $opensans;
+	font-size: 14px;
+	line-height: 26px;
+	color: $lightblack;
+}
+a {
+	color: $deepblack;
+}
+a:hover {
+	text-decoration: none;
+	color: $deepblack;
+}
+//btn style
+.btn {
+    border: 0;
+    border-radius: 35px;
+	color: #fff;
+	padding: 9px 40px;
+	@include transition(all, .3s);
+	border: 0;
+}
+.btn:hover,
+.btn:active,
+.btn:focus {
+	outline: 0;
+	border: 0;
+	box-shadow: none !important;
+}
+.btn-yellow {
+	background: $yellow;
+	color: $white;
+	border: 1px solid $yellow !important;
+}
+.btn-yellow:hover,
+.btn-yellow:active,
+.btn-yellow:hover {
+	color: $white;
+	background-color: rgba( 255, 171, 0, 0.88);
+	border: 1px solid $yellow !important;
+}
+.btn-transparent {
+	background: transparent;
+	color: $white;
+	border: 1px solid $white !important;
+}
+.btn-transparent:hover,
+.btn-transparent:active,
+.btn-transparent:hover {
+	border: 1px solid $yellow !important;
+	color: $white;
+	background: $yellow;
+}
+.btn-white {
+	background: $white;
+	color: $black;
+	border: 1px solid $black !important;
+}
+.btn-white:hover,
+.btn-white:active,
+.btn-white:hover {
+	border: 1px solid $yellow !important;
+	color: $white;
+	background: $yellow;
+}
+.see-all-btn {
+	position: relative;
+    padding-right: 22px;
+}
+.see-all-btn:after {
+    background-image: url(../images/section-arrow.png);
+    position: absolute;
+    content: '';
+    right: 0;
+    top: 2px;
+    height: 17px;
+    width: 15px;
+    @include transition(all, .3s);
+}
+.see-all-btn:hover:after {
+	right: -4px; 
+}
+
+
+
+.section-title h2 {
+	float: left;
+	position: relative;
+	padding-left: 27px;
+}
+.section-title h2:after {
+	content: '';
+	position: absolute;
+	height: 45px;
+	width: 3px;
+	left: 0;
+	top: 0;
+	background: $yellow;
+}
+.section-title a {
+	float: right;
+	padding-top: 12px;
+	font-weight: 600;
+	position: relative;
+	padding-right: 25px;
+	@include transition(all, .3s);
+}
+.section-title a:after {
+	background-image: url(../images/section-arrow.png);
+	position: absolute;
+	content: '';
+    right: 0;
+    top: 16px;
+    height: 17px;
+    width: 15px;
+    @include transition(all, .3s);
+}
+.section-title a:hover:after {
+	right: -4px; 
+}
+.section-title-two {
+	h2 {
+		color: $white;
+	    margin-bottom: 16px;
+	}
+	p {
+		color: $white;
+	    margin-bottom: 70px;
+	}
+}
+.section-title-3 {
+    border-left: 4px solid #ffab00;
+    line-height: 40px;
+    padding-left: 17px;
+}
+
+.owl-nav {
+	.owl-next,
+	.owl-prev {
+		padding: 0 !important;
+	    background: none !important;
+	    margin: 0 !important;
+	    &:focus {
+	    	outline: 0 !important;
+	    }
+	}
+}
+.owl-dot {
+    &:focus {
+    	outline: 0 !important;
+    }
+}
+/*----------------------------------
+	1.4 - fixed bg images
+-----------------------------------*/
+.main-slider .item {
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	padding: 242px 0;
+}
+.slider-one {
+	background-image: url(../images/1.png);
+}
+.slider-two {
+	background-image: url(../images/3.png);
+}
+.page-title-bg {
+	background-image: url(../images/bg/page-title.png);
+	background-position: center center;
+    background-size: cover;
+}
+.footer-bg {
+	background: $gray4;
+}
+.bg-fact {
+	background-image: url(../images/bg/fact-bg.png);
+	background-position: center center;
+    background-size: cover;
+}
+.call-to-action-bg {
+	background-image: url(../images/bg/call-to-action.png);
+	background-position: center center;
+    background-size: cover;
+}
+.testimonial-bg {
+	background-image: url(../images/bg/testimonial-bg.png);
+	background-position: center center;
+    background-size: cover;
+}
+.award-bg {
+	background-image: url(../images/bg/award.png);
+	background-position: center center;
+    background-size: cover;
+}
+.upcomming-trailer-bg {
+	background-image: url(https://sm.mashable.com/mashable_in/seo/default/malang-movie-review-what-is-the-point-of-this-maddeningly-bo_txkc.jpg);
+	background-position: center center;
+    background-size: cover;
+}
+
+
+
+/*----------------------------------
+	1.4 - All padding styles
+-----------------------------------*/
+.mg-top--30 {
+	margin-top: -30px;
+}
+.border-dash {
+	border-bottom: 1px dashed $gray3;
+}
+.section-title {
+	margin-bottom: 110px;
+}
+.section-title-2 {
+	margin-bottom: 68px;
+}
+.section-title-3 {
+	margin-bottom: 30px;
+}
+.no-pad {
+	padding-left: 0;
+	padding-right: 0;
+}
+.default-padding {
+	padding: 120px 0;
+}
+.default-padding-1 {
+	padding: 120px 0 90px;
+}
+.default-padding-2 {
+	padding: 115px 0 120px 0;
+}
+.default-padding-3 {
+	padding: 110px 0 120px 0;
+}
+.default-padding-4 {
+	padding: 90px 0;
+}
+.default-padding-5 {
+	padding: 110px 0 80px 0;
+}
+.default-padding-6 {
+	padding: 90px 0 120px 0;
+}
+.default-padding-7 {
+	padding: 120px 0 115px 0;
+}
+
+
+
+.mg-top-90 {
+	margin-top: 90px;
+}
+.mg-top-100 {
+	margin-top: 100px;
+}
+.mg-bottom-30 {
+	margin-bottom: 30px;
+}
+.mg-bottom-90 {
+	margin-bottom: 90px;
+}
+.mg-bottom-120 {
+	margin-bottom: 120px;
+}
+
+
+@media all and (max-width: 991px) {
+	.pd-top-add {
+		padding-top: 50px;
+	}
+	.mg-bottom-add {
+		margin-bottom: 100px !important;
+	}
+	.mg-b768-remove {
+		margin-bottom: 0 !important;
+	}
+	.section-title {
+	    margin-bottom: 80px;
+	}
+	.mg-bottom-991 {
+		margin-bottom: 0 !important;
+	}
+
+
+
+	.default-padding {
+		padding: 100px 0;
+	}
+	.default-padding-1 {
+		padding: 100px 0 70px;
+	}
+	.default-padding-2 {
+		padding: 95px 0 100px 0;
+	}
+	.default-padding-3 {
+		padding: 90px 0 100px 0;
+	}
+	.default-padding-4 {
+		padding: 90px 0;
+	}
+	.default-padding-5 {
+		padding: 90px 0 60px 0;
+	}
+	.default-padding-6 {
+		padding: 70px 0 100px 0;
+	}
+	.default-padding-7 {
+		padding: 100px 0 90px 0;
+	}
+	.mg-bottom-120 {
+		margin-bottom: 100px;
+	}
+
+
+}
+
+@media all and (max-width: 767px) {
+	.mg-bottom-remove {
+		margin-bottom: 0 !important;
+	}
+	.section-title {
+		text-align: center;
+	    margin-bottom: 40px;
+		h2 {
+			font-size: 30px;
+		    padding-left: 0;
+		    padding-top: 3px;
+	        display: block;
+    		float: none;
+		    margin-bottom: 4px;
+		    &:after {
+		    	display: none;
+		    }
+		}
+		a {
+			display: inline-block;
+    		float: none;
+		}
+	}
+}
+
+
+.dark {
+	background-color: $dark-primary;
+	color: $dark-text;
+	h1,h2,h3,h4,h5,h6,p,ul,ol {
+		color: $dark-text;
+	}
+	.section-title {
+		h2 ,a {
+			color: $dark-text;
+		}
+	}
+}
+
+.dark {
+	.widget {
+		background: $dark-primary-2;
+		.see-all-btn {
+			color: $dark-text-2;
+		}
+	}
+	.widget.widget_tag {
+		a {
+			color: $dark-text-2;
+		}
+	}
+	.show-time-tab {
+		.price-select-btn {
+				background: $dark-gray;
+			.custom-select {
+				border: 1px solid $dark-gray; 
+				color: $gray3;
+			}			
+		}
+	}	
+}

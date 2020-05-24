@@ -1,0 +1,243 @@
+/*---------------------------------------------------
+	2.0 - footer style
+----------------------------------------------------*/
+.newsletter-form {
+	position: relative;
+	input {
+		width: 100%;
+		box-shadow: 0px 0px 15px 0px rgba( 0, 113, 225, 0.06);
+		border: none;
+		height: 40px;
+	    padding: 0 15px 0 23px;
+		border-radius: 30px;
+		&:focus {
+			outline: 0 !important;
+			box-shadow: none !important;
+		}
+	}
+	button {
+	    position: absolute;
+		right: 13px;
+		background: none;
+		border: 0;
+		top: 5px;
+	    cursor: pointer;
+	    &:focus {
+	    	outline: 0;
+	    }
+	    &:after {
+	    	content: '';
+		    position: absolute;
+		    background: $gray;
+		    height: 29px;
+		    width: 1px;
+		    left: -7px;
+		    top: 1px;
+	    }	
+	}
+	.input-group-append {
+		.form-control {
+			font-size: 14px;
+		}
+		.input-group-text {
+			padding: 0 21px 0 14px;
+			background: $yellow;
+			border-left: 1px solid #eeeeee;
+			color: $white;
+		}
+	}
+	#subscribe-result {
+	    margin-top: 12px;
+	    p {
+	    	line-height: 21px;
+    		font-size: 13px;
+	    }
+	}
+}
+.social-icon-wrap {
+	a {
+		box-shadow: 0px 0px 10px 0px rgba( 5, 122, 240, 0.10);
+		height: 35px;
+		width: 35px;
+		border-radius: 50%;
+		display: inline-block;
+		text-align: center;
+		line-height: 35px;
+		margin-right: 10px;
+		@include transition(all, .3s);
+	}
+	.facebook:hover {
+		color: $facebook;
+	}
+	.twitter:hover {
+		color: $twitter;
+	}
+	.pinterest:hover {
+		color: $pinterest;
+	}
+	.linkedin:hover {
+		color: $linkedin;
+	}
+}
+.social-icon-wrap-2 {
+	a {
+		height: 35px;
+		width: 35px;
+		border-radius: 50%;
+		display: inline-block;
+		text-align: center;
+		line-height: 34px;
+		margin-right: 10px;
+		border: 1px solid $gray6;
+		color: $lightblack;
+		@include transition(all, .3s);
+		&:hover {
+			background: $deepblack;
+			color: $white;
+		}
+	}
+}
+.footer-section-mg {
+	margin-top: 0 !important;
+}
+.footer-section {
+	padding-top: 100px;
+	margin-top: 120px;
+	.widget_about {
+		img {
+		    padding-bottom: 27px;
+		}
+		p {
+			padding-bottom: 15px;
+		}
+	}
+	h5 {
+		margin-bottom: 20px;
+	}
+	ul {
+		padding-left: 0;
+		display: inline-block;
+		li {
+			list-style: none;
+			line-height: 32px;
+		}
+	}
+	.footer-bottom {
+		margin-top: 92px;
+		background: $deepblack;
+		padding: 33px 33px 19px 33px;
+		p {
+			color: $white;
+			font-size: 16px;
+			font-family: $ubuntu;
+		}
+	}
+}
+@media all and (max-width: 1024px) {
+	.footer-section ul.mr-5 {
+	    margin-right: 25px !important;
+	}
+}
+@media all and (max-width: 991px) {
+	.footer-section .mg-bt-small {
+		margin-bottom: 50px;
+	}
+	.footer-section {
+		margin-top: 100px;
+	}
+}
+// dark style //
+.footer-section.dark {
+	background: $dark-primary-2;
+	input[type='text'] {
+		background: $dark-gray;
+		color: $dark-text;
+	}
+	.social-icon-wrap {
+		a {
+			background: $dark-text;
+		}
+	}
+	ul {
+		li {
+			a {
+			color: $dark-text;
+
+			}
+		}
+	}
+	.footer-bottom {
+		border-top: 1px solid $dark-smoke;
+		background: $dark-primary-2;
+		p {
+			color: $dark-text;
+		}
+	} 
+	.newsletter-form {
+		button {			
+			&:after {
+				background: $dark-gray-2;
+			}
+		}
+		.input-group-append {
+			.form-control {
+				font-size: 14px;
+				background: $dark-gray !important;
+			}
+			.input-group-text {
+				padding: 0 21px 0 14px;
+				background: $yellow !important;
+				border-left: 1px solid #eeeeee;
+				color: $white !important;
+
+			}
+		}
+	} 
+}
+.footer-section.dark .newsletter-form {
+	input {
+		font-size: 14px;
+		background: $dark-gray !important;
+		color: $dark-text !important;
+		&:focus {
+			outline: 0 !important;
+			box-shadow: none !important;
+		}
+	}
+	.input-group-append {
+		.input-group-text {
+			border-left: 1px solid $dark-gray-2 !important;
+		}
+	}
+}
+
+#scrollUp {
+	background: $yellow;
+    border-radius: 50%;
+    bottom: 24px;
+    color: #fff;
+    color: #fff;
+    height: 48px;
+    width: 48px;
+    right: 20px;
+    text-align: center;
+    line-height: 50px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#scrollUp .fa {
+    font-size: 20px;
+    color: #ffffff;
+}
+@media all and (max-width: 767px) {
+	#scrollUp {
+	    height: 40px;
+	    width: 40px;
+	    line-height: 40px;
+	}
+	#scrollUp .fa {
+	    font-size: 16px;
+	}
+}

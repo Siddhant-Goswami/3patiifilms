@@ -1,0 +1,15 @@
+/*---------------------------------------------------
+	2.0 - Header style
+----------------------------------------------------*/
+.header-area {
+  background: red !important; }
+
+.header-top-bar {
+  height: 50px;
+  line-height: 50px; }
+  .header-top-bar i {
+    margin-right: 8px; }
+  .header-top-bar .divide-bar {
+    padding: 0 13px; }
+  .header-top-bar .menu-top-info {
+    float: right; }
