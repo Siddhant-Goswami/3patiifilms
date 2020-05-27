@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Bioscope - Movie/Film/Cinema/TV/Agency HTML Template</title>
+    <title>3 Patti Films</title>
 
     <!--Common Styles Plugins-->
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
@@ -423,7 +423,7 @@
         <div class="swiper-slide">
           <div class="movie-post">
             <div class="entry-thumbnail">
-              <img src="images/posters/teenpattti-medium-500.gif" alt="movie-post" />
+              <img src="images/posters/log (2).jpg" alt="movie-post" />
               <!-- <div class="pulse-video pulse-video-3">
                 <a
                   class="btn-video play-video"
@@ -1679,6 +1679,7 @@
         }
       })
       .then(function (res) {
+        console.log("res", res.data);
         const latestNews = res.data.articles[0];
         const newsArray = res.data.articles.filter(item => item.urlToImage).slice(1, 4);
         renderLatestNews(latestNews.title, latestNews.urlToImage, latestNews.description); 
