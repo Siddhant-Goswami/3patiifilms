@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1"> 
-    <title>Bioscope - Movie/Film/Cinema/TV/Agency HTML Template</title>
+    <title>3 Patti Films</title>
 
     <!--Common Styles Plugins-->
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
@@ -187,10 +187,10 @@
             <div class="row">
                 <div class="col-sm-12">
                     <nav class="page-title" aria-label="breadcrumb">
-                        <h2>BLOG</h2>
+                        <h2>News</h2>
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"><a href="#">Home</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">Blog</li>
+                            <li class="breadcrumb-item active" aria-current="page">News</li>
                         </ol>
                     </nav>
                 </div>
@@ -202,61 +202,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-12">
-                    <div class="movie-blog-post">
-                        <div class="thumb">
-                            <img src="images/blog/1.png" alt="#">
-                        </div>
-                        <div class="movie-blog-post-details">
-                            <h5><a href="blog-details.html">Nostrud exercitation ullamco this Corporate world</a></h5>
-                            <ul class="post-info">
-                                <li class="post-author"><i class="fa fa-user"></i>Themelayer</li>
-                                <li class="post-date"><i class="fa fa-calendar"></i>28 Nov</li>
-                                <li class="post-tag">
-                                    <i class="fa fa-tags"></i>
-                                    <a href="#">Movie, </a>
-                                    <a href="#"> Cinema</a>
-                                </li>
-                            </ul>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt labore for dolore magna aliqua. Ut enim minim veniam, quis nostrud exercitation ullamco laboris.</p>
-                            <a class="read-more-btn" href="blog-details.html">Read More</a>
-                        </div>
-                    </div>
-                    <div class="movie-blog-post">
-                        <div class="thumb">
-                            <img src="images/blog/2.png" alt="#">
-                        </div>
-                        <div class="movie-blog-post-details">
-                            <h5><a href="blog-details.html">Avatar maintain Leaded Over at UK box Office</a></h5>
-                            <ul class="post-info">
-                                <li class="post-author"><i class="fa fa-user"></i>Themelayer</li>
-                                <li class="post-date"><i class="fa fa-calendar"></i>28 Nov</li>
-                                <li class="post-tag">
-                                    <i class="fa fa-tags"></i>
-                                    <a href="#">Movie, </a>
-                                    <a href="#"> Cinema</a>
-                                </li>
-                            </ul>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt labore for dolore magna aliqua. Ut enim minim veniam, quis nostrud exercitation ullamco laboris.</p>
-                            <a class="read-more-btn" href="blog-details.html">Read More</a>
-                        </div>
-                    </div>
-                    <div class="movie-blog-post">
-                        <div class="movie-blog-post-details">
-                            <h5><a href="blog-details.html">Fast & Furious 8 Maintains Lead to Over Box Office</a></h5>
-                            <ul class="post-info">
-                                <li class="post-author"><i class="fa fa-user"></i>Themelayer</li>
-                                <li class="post-date"><i class="fa fa-calendar"></i>28 Nov</li>
-                                <li class="post-tag">
-                                    <i class="fa fa-tags"></i>
-                                    <a href="#">Movie, </a>
-                                    <a href="#"> Cinema</a>
-                                </li>
-                            </ul>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt labore for dolore magna aliqua. Ut enim minim veniam, quis nostrud exercitation ullamco laboris.</p>
-                            <a class="read-more-btn" href="blog-details.html">Read More</a>
-                        </div>
-                    </div>
-                    <div class="movie-blog-post">
+                    <div id="id_news"></div>
+                    <!-- <div class="movie-blog-post">
                         <div class="thumb blog-video">
                             <img src="images/blog/0.png" alt="#">
                             <div class="pulse-video">
@@ -277,19 +224,19 @@
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt labore for dolore magna aliqua. Ut enim minim veniam, quis nostrud exercitation ullamco laboris.</p>
                             <a href="blog-details.html" class="read-more-btn">Read More</a>
                         </div>
-                    </div>
+                    </div> -->
                     <nav class="Page navigation">
                         <ul class="pagination">
                             <li><a class="nav-arrow" href="#"><i class="fa fa-angle-double-left"></i></a></li>
-                            <li><a href="#">1</a></li>
-                            <li><a href="#">2</a></li>
-                            <li><a href="#">3</a></li>
+                            <li><a id="id_paginator1" href="?page=1">1</a></li>
+                            <li><a id="id_paginator2" href="?page=2">2</a></li>
+                            <li><a id="id_paginator3" href="?page=3">3</a></li>
                             <li><a class="nav-arrow" href="#"><i class="fa fa-angle-double-right"></i></a></li>
                         </ul>
                     </nav>
                 </div>
                 <div class="col-lg-4 col-12">
-                    <div class="widget widget_search">
+                    <!-- <div class="widget widget_search">
                         <form class="form-inline">
                             <div class="input-group">                             
                               <input type="text" class="form-control" placeholder="Search">
@@ -298,39 +245,12 @@
                               </div>
                             </div>
                         </form>
-                    </div>
+                    </div> -->
                     <div class="widget widget_related_post">
-                        <h5 class="widget_title">Related Post</h5>
-                        <div class="media">
-                            <img class="mr-3" src="images/widget/1.png" alt="widget">
-                            <div class="media-body">
-                                <h5 class="title"><a href="#">What make you more beautiful with us</a></h5>
-                                <p class="date">18 Feb 2019</p>
-                            </div>
-                        </div>
-                        <div class="media">
-                            <img class="mr-3" src="images/widget/1.png" alt="widget">
-                            <div class="media-body">
-                                <h5 class="title"><a href="#">What make you more beautiful with us</a></h5>
-                                <p class="date">18 Feb 2019</p>
-                            </div>
-                        </div>
-                        <div class="media">
-                            <img class="mr-3" src="images/widget/1.png" alt="widget">
-                            <div class="media-body">
-                                <h5 class="title"><a href="#">What make you more beautiful with us</a></h5>
-                                <p class="date">18 Feb 2019</p>
-                            </div>
-                        </div>
-                        <div class="media">
-                            <img class="mr-3" src="images/widget/1.png" alt="widget">
-                            <div class="media-body">
-                                <h5 class="title"><a href="#">What make you more beautiful with us</a></h5>
-                                <p class="date">18 Feb 2019</p>
-                            </div>
-                        </div>
+                        <h5 class="widget_title">Country Headlines</h5>
+                        <div id="id_headlines"></div>
                     </div>
-                    <div class="widget widget_category">
+                    <!-- <div class="widget widget_category">
                         <h5 class="widget_title">Category</h5>
                         <ul>
                             <li><a href="#"><i class="fa fa-angle-right"></i>Community</a></li>
@@ -358,7 +278,7 @@
                         <a href="#">Film Studio</a>
                         <a href="#">Cinema</a>
                         <a href="#">Trending</a>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
@@ -438,6 +358,129 @@
         </div>
     </div>
     <!-- Footer-section End -->
+
+    <!-- news api -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <script>
+        var pageIndex = 1;
+        const pageLi = document.getElementById(`id_paginator1`);
+        pageLi.addEventListener('click', (e)=>{
+            e.preventDefault();
+            pageIndex=1;
+            fetchNews(pageIndex)
+        })
+        const pageLi2 = document.getElementById(`id_paginator2`);
+        pageLi2.addEventListener('click', (e)=>{
+            e.preventDefault();
+            pageIndex=2;
+            fetchNews(pageIndex)
+        })
+        const pageLi3 = document.getElementById(`id_paginator3`);
+        pageLi3.addEventListener('click', (e)=>{
+            e.preventDefault();
+            pageIndex=3;
+            fetchNews(pageIndex)
+        })
+      const options = {  weekday: 'long', month: 'long', day: 'numeric', hour: '2-digit', minute: '2-digit', hour12: true };
+      function renderLatestNews(title, postUrl, imgUrl, description, source, time){
+          const dateObj = new Date(time).toLocaleTimeString('en-us', options);
+          var newsSidebarContainer = document.getElementById("id_news");
+          if (title.length > 100) title = title.slice(0, 100).concat("...");
+          var latestNewsTemplate = `<div class="movie-blog-post">
+                                        <div class="thumb">
+                                            <img src=${imgUrl} alt="#">
+                                        </div>
+                                        <div class="movie-blog-post-details">
+                                            <h5><a href="blog-details.html">
+                                            ${title}
+                                            </a></h5>
+                                            <ul class="post-info">
+                                                <li class="post-author"><i class="fa fa-user"></i>
+                                                ${source}
+                                                </li>
+                                                <li class="post-date"><i class="fa fa-calendar"></i>${dateObj}</li>
+                                            </ul>
+                                            <p>${description}</p>
+                                            <a class="read-more-btn" target="_blank" href=${postUrl}>Read More</a>
+                                        </div>
+                                    </div>`
+         
+          newsSidebarContainer.insertAdjacentHTML("beforeend", latestNewsTemplate);
+      }
+      function renderNews(title, postUrl, imgUrl) {
+      var newsSidebarContainer = document.getElementById("id_headlines");
+      if (title.length > 75) title = title.slice(0, 75).concat("...");
+      var newsTemplate = `<div class="media">
+                            <img class="mr-3" src=${imgUrl} alt="widget" style="display: block;
+                                                                           max-width:117px;
+                                                                           width: auto;
+                                                                           height: auto;" />
+                            <div class="media-body">
+                                <h5 class="title" style="font-size: 15px;"><a href=${postUrl}>${title}</a></h5>
+                            </div>
+                        </div>`;
+      newsSidebarContainer.insertAdjacentHTML("beforeend", newsTemplate);
+    }
+
+    function fetchNews(page = 1){
+        document.getElementById("id_news").innerHTML = "";
+        [1,2,3].map(num=> {
+        const pageLi = document.getElementById(`id_paginator${num}`);
+        if(num===page)
+        {
+            pageLi.classList.add("currentPage")
+        }
+        else{
+            pageLi.classList.remove("currentPage")
+
+        }
+        } )
+        axios
+        .get(
+            `https://newsapi.org/v2/top-headlines?country=in&category=entertainment&apiKey=20f6e13a505b4237895bff4c5e0a85aa&pageSize=10&page=${page}`
+        )
+        .then(function (response) {
+            if (response.status === 200) {
+            return response;
+            } else {
+            return Promise.reject(response);
+            }
+        })
+        .then(function (res) {
+            const newsArray = res.data.articles.filter(item => item.urlToImage);
+            newsArray.map((item) => renderLatestNews(item.title, item.url, item.urlToImage, item.description, item.source.name, item.publishedAt));
+        })
+        .catch(function (err) {
+            console.log("Something went wrong.", err);
+        });
+        return false;
+    }
+    function fetchHeadlines(){
+        axios
+        .get(
+            `https://newsapi.org/v2/top-headlines?country=in&apiKey=20f6e13a505b4237895bff4c5e0a85aa`
+        )
+        .then(function (response) {
+            if (response.status === 200) {
+            return response;
+            } else {
+            return Promise.reject(response);
+            }
+        })
+        .then(function (res) {
+            console.log("res", res.data);
+            const newsArray = res.data.articles.filter(item => item.urlToImage).slice(0, 9);
+            newsArray.map((item) => renderNews(item.title, item.url, item.urlToImage));
+        })
+        .catch(function (err) {
+            console.log("Something went wrong.", err);
+        });
+    }
+
+      fetchNews();
+      fetchHeadlines();
+  </script>
 
     <!--Common JS Plugin-->
     <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>

@@ -224,7 +224,7 @@ a:hover {
   background-image: url(../images/3.png); }
 
 .page-title-bg {
-  background-image: url(../images/bg/page-title.png);
+  background-image: url("https://images.pexels.com/photos/196667/pexels-photo-196667.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
   background-position: center center;
   background-size: cover; }
 
@@ -251,10 +251,12 @@ a:hover {
   background-position: center center;
   background-size: cover; }
 
-.upcomming-trailer-bg {
-  background-image: url(../images/posters/evolution.jpg);
-  background-position: center center;
-  background-size: cover; }
+  .upcomming-trailer-bg {
+    background-image: url(../images/posters/evolution.jpg);
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+   }
 
 /*----------------------------------
 	1.4 - All padding styles
@@ -4208,6 +4210,11 @@ input:checked + .slider:before {
   #scrollUp .fa {
     font-size: 16px; } }
 
+.currentPage {
+    background: #ffab00;
+    color: #ffffff !important;
+    border: 1px solid #ffab00 !important;
+}
 /* custom style for news image */
 /* #news-image{
   display: block;
