@@ -149,7 +149,7 @@
     </nav>
 
     <!-- page-title start -->
-    <div class="page-title page-title-bg-about mg-bottom-120">
+    <div id="page_title" class="page-title page-title-bg-about mg-bottom-120">
       <div class="container">
         <h2>About Us</h2>
         <nav aria-label="breadcrumb">
@@ -169,19 +169,17 @@
       <div class="container">
         <div class="row">
           <div class="col-xl-3 col-lg-4 col-12">
-            <div class="widget widget-2 widget-menu">
+            <!-- <div class="widget widget-2 widget-menu">
               <a href="#">Film Production</a>
               <a href="#">Creative Direction</a>
               <a href="#">Equipment Hire</a>
               <a href="#">Filming Services</a>
               <a href="#">Flexible Office Spece</a>
               <a href="#">Studio Hire</a>
-            </div>
+            </div> -->
             <div class="widget widget-2 widget-author">
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna to aliqua.
-                Ut enim minim veniam, quis nostrud exercitation.
+                Fierce determination is me, nothing deters my spirit, woman of strength; ability to transform challenges into opportunities. My Film making is inspired by the myriad rhythms of rustic life lived by women in India. My films depict the simplicity of life the interplay of woman and world, the stories around are told in simple themetic problems and forms in black on white with splashes of colours.
               </p>
               <div class="thumb">
                 <img src="images/team/rupa.png" style="max-height: 53px;" alt="author" />
@@ -243,24 +241,24 @@
                 </div>
               </form>
             </div> -->
-            <div class="widget-2 widget-pdf">
+            <!-- <div class="widget-2 widget-pdf">
               <a href="#"
                 ><i class="fa fa-file-pdf-o"></i>Download Company Profile</a
               >
               <a href="#"
                 ><i class="fa fa-file-pdf-o"></i>Our Presentation PDF</a
               >
-            </div>
+            </div> -->
           </div>
           <div class="col-xl-9 col-lg-8 col-12 mg-bottom-120">
-            <div class="row" style="display: flex; justify-content: center" >
+            <!-- <div class="row" style="display: flex; justify-content: center" >
               <div class="col-6">
                 <img src="images/icons/logo.svg" alt="img" />
               </div>
               
-            </div>
+            </div> -->
             <div class="service-details-area">
-              <h5>3 Patti Films</h5>
+              <h4>About Us</h4>
               <p>
                 '3 Patti Films' is an innovative platform for newcomers and also
                 the experienced ones. As our theme celebrates 'Kal, Aaj aur Kal,
@@ -752,6 +750,16 @@
     <!-- Footer-section End -->
 
     <!--Common JS Plugin-->
+    <script>
+      function renderPoster(){
+     var hiddenContainer = document.getElementById("page_title");
+     if(screen.width < 500)
+       hiddenContainer.style.backgroundPosition = "center";
+     else
+     hiddenContainer.style.backgroundPosition = "inherit";
+   }
+   window.onload = renderPoster;
+   </script>
     <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.bundle.js"></script>

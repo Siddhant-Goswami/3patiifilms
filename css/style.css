@@ -271,7 +271,7 @@ a:hover {
   .upcomming-trailer-bg {
     background-image: url(../images/posters/evolution.jpg);
     background-position: center center;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
    }
 
