@@ -1,380 +1,940 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1"> 
-    <title>Bioscope - Movie/Film/Cinema/TV/Agency HTML Template</title>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>3 Patti Films</title>
 
     <!--Common Styles Plugins-->
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="css/animate.css">
-    <link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
-    <link rel="stylesheet" type="text/css" href="css/owl.theme.default.min.css">
-    <link rel="stylesheet" type="text/css" href="css/magnific-popup.css">
-    <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.min.css">
-    <link rel="stylesheet" type="text/css" href="css/flipclock.css">
-    <link rel="stylesheet" type="text/css" href="css/scroll.css">
-    <link rel="stylesheet" type="text/css" href="css/line-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="css/swiper.min.css">
-    <link rel="stylesheet" href="css/megamenu/main.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/animate.css" />
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="css/owl.theme.default.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="css/magnific-popup.css" />
+    <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/flipclock.css" />
+    <link rel="stylesheet" type="text/css" href="css/scroll.css" />
+    <link rel="stylesheet" type="text/css" href="css/line-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/swiper.min.css" />
+    <link rel="stylesheet" href="css/megamenu/main.css" />
     <link rel="stylesheet" href="css/mylist-player.css" />
 
     <!--Google fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700" rel="stylesheet">
-    
+    <link
+      href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700"
+      rel="stylesheet"
+    />
+
     <!--Custom Style-->
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
-        <script src="js/html5shiv.min.js"></script>
-        <script src="js/respond.min.js"></script>
+      <script src="js/html5shiv.min.js"></script>
+      <script src="js/respond.min.js"></script>
     <![endif]-->
-</head>
-<body>
-
+  </head>
+  <body>
     <!--preloading-->
     <div id="preloader">
-        <div id="status">
-            <span></span>
-            <span></span>
-        </div>
+      <div id="status">
+        <span></span>
+        <span></span>
+      </div>
     </div>
     <!--end of preloading-->
 
     <!-- sm megamenu start here -->
     <nav id="superMenu" class="navbar sm-navbar movie-navbar navbar-expand-lg">
-        <div class="container">
-          <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo"></a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="line"></span>
-            <span class="line"></span>
-            <span class="line"></span>
-          </button>
+      <div class="container">
+        <a class="navbar-brand" href="index.html"
+          ><img src="images/logo.png" alt="logo"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+        </button>
 
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto">
-              <li>
-                <form class="navbar-search-form">
-                  <div class="custom-select-wrap">
-                    <select class="custom-select" name="type">
-                        <option value="movie" selected="">Movies</option>
-                        <option value="tv">Tv Show</option>
-                        <option value="tv">Serial</option>
-                    </select>
-                  </div>
-                  <input type="search" name="searchinput">
-                  <button type="submit" class="search-submit"><i class="fa fa-search"></i></button>
-                </form>
-              </li>
-            </ul>
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item has-menu-item-submenu">
-                <a href="google.com">Home <i class="fa fa-angle-down"></i></a>
-                <ul class="sub-menu">
-                  <li><a href="home-1.html">01. Home</a></li>
-                  <li><a href="home-2.html">02. Home</a></li>
-                  <li><a href="home-3.html">03. Home</a></li>
-                  <li><a href="home-4.html">04. Home</a></li>
-                </ul>
-              </li>
-              <li class="nav-item has-menu-item-megamenu"><a href="#">Pages <i class="fa fa-angle-down"></i></a>
-                <div class="mega-menu">
-                  <div class="container">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li>
+              <form class="navbar-search-form">
+                <div class="custom-select-wrap">
+                  <select class="custom-select" name="type">
+                    <option value="movie" selected="">Movies</option>
+                    <option value="tv">Tv Show</option>
+                    <option value="tv">Serial</option>
+                  </select>
+                </div>
+                <input type="search" name="searchinput" />
+                <button type="submit" class="search-submit">
+                  <i class="fa fa-search"></i>
+                </button>
+              </form>
+            </li>
+          </ul>
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item has-menu-item-submenu">
+              <a href="google.com">Home <i class="fa fa-angle-down"></i></a>
+              <ul class="sub-menu">
+                <li><a href="home-1.html">01. Home</a></li>
+                <li><a href="home-2.html">02. Home</a></li>
+                <li><a href="home-3.html">03. Home</a></li>
+                <li><a href="home-4.html">04. Home</a></li>
+              </ul>
+            </li>
+            <li class="nav-item has-menu-item-megamenu">
+              <a href="#">Pages <i class="fa fa-angle-down"></i></a>
+              <div class="mega-menu">
+                <div class="container">
                   <!-- start widget -->
                   <div class="smm-widget-area">
                     <div class="row">
                       <!-- single widget -->
                       <div class="col-lg-3 col-md-6">
                         <div class="widget smm-widget-list">
-                          <h4 class="smm-widget-title"><i class="fa fa-bell" aria-hidden="true"></i>Home Pages (Default.)</h4>
+                          <h4 class="smm-widget-title">
+                            <i class="fa fa-bell" aria-hidden="true"></i>Home
+                            Pages (Default.)
+                          </h4>
                           <ul>
-                            <li><a href="home-1.html"><i class="fa fa-angle-right"></i> 01. Home</a></li>
-                            <li><a href="home-2.html"><i class="fa fa-angle-right"></i> 02. Home</a></li>
-                            <li><a href="home-3.html"><i class="fa fa-angle-right"></i> 03. Home</a></li>
-                            <li><a href="home-4.html"><i class="fa fa-angle-right"></i> 04. Home</a></li>
+                            <li>
+                              <a href="home-1.html"
+                                ><i class="fa fa-angle-right"></i> 01. Home</a
+                              >
+                            </li>
+                            <li>
+                              <a href="home-2.html"
+                                ><i class="fa fa-angle-right"></i> 02. Home</a
+                              >
+                            </li>
+                            <li>
+                              <a href="home-3.html"
+                                ><i class="fa fa-angle-right"></i> 03. Home</a
+                              >
+                            </li>
+                            <li>
+                              <a href="home-4.html"
+                                ><i class="fa fa-angle-right"></i> 04. Home</a
+                              >
+                            </li>
                           </ul>
                         </div>
                       </div>
                       <!-- single widget -->
                       <div class="col-lg-3 col-md-6">
                         <div class="widget smm-widget-list">
-                          <h4 class="smm-widget-title"><i class="fa fa-camera" aria-hidden="true"></i>Inner Pages (Default)</h4>
+                          <h4 class="smm-widget-title">
+                            <i class="fa fa-camera" aria-hidden="true"></i>Inner
+                            Pages (Default)
+                          </h4>
                           <ul>
-                            <li><a href="blog.html"><i class="fa fa-angle-right"></i>Blog</a></li>
-                            <li><a href="blog-details.html"><i class="fa fa-angle-right"></i>Blog Details</a></li>
-                            <li><a href="movie-details.html"><i class="fa fa-angle-right"></i>Movie Details</a></li>
-                            <li><a href="search.html"><i class="fa fa-angle-right"></i>Search Page</a></li>
-                            <li><a href="service.html"><i class="fa fa-angle-right"></i>Service</a></li>
-                            <li><a href="service-details.html"><i class="fa fa-angle-right"></i>Service Details</a></li>
-                            <li><a href="show-time.html"><i class="fa fa-angle-right"></i>Show Time</a></li>
-                            <li><a href="team.html"><i class="fa fa-angle-right"></i>Team Page</a></li>
-                            <li><a href="testimonial.html"><i class="fa fa-angle-right"></i>Testimonial</a></li>
-                            <li><a href="404.html"><i class="fa fa-angle-right"></i>404</a></li>
+                            <li>
+                              <a href="blog.html"
+                                ><i class="fa fa-angle-right"></i>Blog</a
+                              >
+                            </li>
+                            <li>
+                              <a href="blog-details.html"
+                                ><i class="fa fa-angle-right"></i>Blog
+                                Details</a
+                              >
+                            </li>
+                            <li>
+                              <a href="movie-details.html"
+                                ><i class="fa fa-angle-right"></i>Movie
+                                Details</a
+                              >
+                            </li>
+                            <li>
+                              <a href="search.html"
+                                ><i class="fa fa-angle-right"></i>Search Page</a
+                              >
+                            </li>
+                            <li>
+                              <a href="service.html"
+                                ><i class="fa fa-angle-right"></i>Service</a
+                              >
+                            </li>
+                            <li>
+                              <a href="service-details.html"
+                                ><i class="fa fa-angle-right"></i>Service
+                                Details</a
+                              >
+                            </li>
+                            <li>
+                              <a href="show-time.html"
+                                ><i class="fa fa-angle-right"></i>Show Time</a
+                              >
+                            </li>
+                            <li>
+                              <a href="team.html"
+                                ><i class="fa fa-angle-right"></i>Team Page</a
+                              >
+                            </li>
+                            <li>
+                              <a href="testimonial.html"
+                                ><i class="fa fa-angle-right"></i>Testimonial</a
+                              >
+                            </li>
+                            <li>
+                              <a href="404.html"
+                                ><i class="fa fa-angle-right"></i>404</a
+                              >
+                            </li>
                           </ul>
                         </div>
                       </div>
                       <!-- single widget -->
                       <div class="col-lg-3 col-md-6">
                         <div class="widget smm-widget-list">
-                          <h4 class="smm-widget-title"><i class="fa fa-bell" aria-hidden="true"></i>Home Pages (Dark..)</h4>
+                          <h4 class="smm-widget-title">
+                            <i class="fa fa-bell" aria-hidden="true"></i>Home
+                            Pages (Dark..)
+                          </h4>
                           <ul>
-                            <li><a href="home-1-dark.html"><i class="fa fa-angle-right"></i> 01. Home Dark</a></li>
-                            <li><a href="home-2-dark.html"><i class="fa fa-angle-right"></i> 02. Home Dark</a></li>
-                            <li><a href="home-3-dark.html"><i class="fa fa-angle-right"></i> 03. Home Dark</a></li>
-                            <li><a href="home-4-dark.html"><i class="fa fa-angle-right"></i> 04. Home Dark</a></li>
+                            <li>
+                              <a href="home-1-dark.html"
+                                ><i class="fa fa-angle-right"></i> 01. Home
+                                Dark</a
+                              >
+                            </li>
+                            <li>
+                              <a href="home-2-dark.html"
+                                ><i class="fa fa-angle-right"></i> 02. Home
+                                Dark</a
+                              >
+                            </li>
+                            <li>
+                              <a href="home-3-dark.html"
+                                ><i class="fa fa-angle-right"></i> 03. Home
+                                Dark</a
+                              >
+                            </li>
+                            <li>
+                              <a href="home-4-dark.html"
+                                ><i class="fa fa-angle-right"></i> 04. Home
+                                Dark</a
+                              >
+                            </li>
                           </ul>
                         </div>
                       </div>
                       <!-- single widget -->
                       <div class="col-lg-3 col-md-6">
                         <div class="widget smm-widget-list">
-                          <h4 class="smm-widget-title"><i class="fa fa-camera" aria-hidden="true"></i>Inner Pages (Dark.)</h4>
+                          <h4 class="smm-widget-title">
+                            <i class="fa fa-camera" aria-hidden="true"></i>Inner
+                            Pages (Dark.)
+                          </h4>
                           <ul>
-                            <li><a href="blog-dark.html"><i class="fa fa-angle-right"></i>Blog</a></li>
-                            <li><a href="blog-details-dark.html"><i class="fa fa-angle-right"></i>Blog Details</a></li>
-                            <li><a href="movie-details-dark.html"><i class="fa fa-angle-right"></i>Movie Details</a></li>
-                            <li><a href="search-dark.html"><i class="fa fa-angle-right"></i>Search Page</a></li>
-                            <li><a href="service-dark.html"><i class="fa fa-angle-right"></i>Service</a></li>
-                            <li><a href="service-details-dark.html"><i class="fa fa-angle-right"></i>Service Details</a></li>
-                            <li><a href="show-time-dark.html"><i class="fa fa-angle-right"></i>Show Time</a></li>
-                            <li><a href="team-dark.html"><i class="fa fa-angle-right"></i>Team Page</a></li>
-                            <li><a href="testimonial-dark.html"><i class="fa fa-angle-right"></i>Testimonial</a></li>
-                            <li><a href="404-dark.html"><i class="fa fa-angle-right"></i>404</a></li>
+                            <li>
+                              <a href="blog-dark.html"
+                                ><i class="fa fa-angle-right"></i>Blog</a
+                              >
+                            </li>
+                            <li>
+                              <a href="blog-details-dark.html"
+                                ><i class="fa fa-angle-right"></i>Blog
+                                Details</a
+                              >
+                            </li>
+                            <li>
+                              <a href="movie-details-dark.html"
+                                ><i class="fa fa-angle-right"></i>Movie
+                                Details</a
+                              >
+                            </li>
+                            <li>
+                              <a href="search-dark.html"
+                                ><i class="fa fa-angle-right"></i>Search Page</a
+                              >
+                            </li>
+                            <li>
+                              <a href="service-dark.html"
+                                ><i class="fa fa-angle-right"></i>Service</a
+                              >
+                            </li>
+                            <li>
+                              <a href="service-details-dark.html"
+                                ><i class="fa fa-angle-right"></i>Service
+                                Details</a
+                              >
+                            </li>
+                            <li>
+                              <a href="show-time-dark.html"
+                                ><i class="fa fa-angle-right"></i>Show Time</a
+                              >
+                            </li>
+                            <li>
+                              <a href="team-dark.html"
+                                ><i class="fa fa-angle-right"></i>Team Page</a
+                              >
+                            </li>
+                            <li>
+                              <a href="testimonial-dark.html"
+                                ><i class="fa fa-angle-right"></i>Testimonial</a
+                              >
+                            </li>
+                            <li>
+                              <a href="404-dark.html"
+                                ><i class="fa fa-angle-right"></i>404</a
+                              >
+                            </li>
                           </ul>
                         </div>
                       </div>
-
                     </div>
                   </div>
                   <!-- end widget -->
-                  </div>
                 </div>
-              </li>
-              <li class="nav-item has-menu-item-submenu">
-                <a href="google.com">Dark <i class="fa fa-angle-down"></i></a>
-                <ul class="sub-menu">
-                  <li><a href="home-1-dark.html">01. Home</a></li>
-                  <li><a href="home-2-dark.html">02. Home</a></li>
-                  <li><a href="home-3-dark.html">03. Home</a></li>
-                  <li><a href="home-4-dark.html">04. Home</a></li>
-                </ul>
-              </li>
-              <li class="nav-item has-menu-item-submenu">
-                <a href="google.com">About <i class="fa fa-angle-down"></i></a>
-                <ul class="sub-menu">
-                  <li><a href="about.html">About</a></li>
-                  <li><a href="about-dark.html">About Dark</a></li>
-                  <li><a href="actor-details.html">Actor Details</a></li>
-                  <li><a href="actor-details-dark.html">Actor Details Dark</a></li>
-                </ul>
-              </li>
-              <li class="nav-item"><a href="contact.html">Contact</a></li>
-              <!-- end Mega menu -->
-            </ul>
-          </div>
+              </div>
+            </li>
+            <li class="nav-item has-menu-item-submenu">
+              <a href="google.com">Dark <i class="fa fa-angle-down"></i></a>
+              <ul class="sub-menu">
+                <li><a href="home-1-dark.html">01. Home</a></li>
+                <li><a href="home-2-dark.html">02. Home</a></li>
+                <li><a href="home-3-dark.html">03. Home</a></li>
+                <li><a href="home-4-dark.html">04. Home</a></li>
+              </ul>
+            </li>
+            <li class="nav-item has-menu-item-submenu">
+              <a href="google.com">About <i class="fa fa-angle-down"></i></a>
+              <ul class="sub-menu">
+                <li><a href="about.html">About</a></li>
+                <li><a href="about-dark.html">About Dark</a></li>
+                <li><a href="actor-details.html">Actor Details</a></li>
+                <li>
+                  <a href="actor-details-dark.html">Actor Details Dark</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item"><a href="contact.html">Contact</a></li>
+            <!-- end Mega menu -->
+          </ul>
         </div>
+      </div>
     </nav>
-    
+
     <!-- page-title start -->
-    <div class="page-title page-title-bg mg-bottom-120">
-        <div class="container">
-            <h2>Film Production</h2>
-            <nav aria-label="breadcrumb">
-              <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="#">Home</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Film Production</li>
-              </ol>
-            </nav>
-        </div>
+    <div class="page-title page-title-bg-about mg-bottom-120">
+      <div class="container">
+        <h2>About Us</h2>
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">
+              About Us
+            </li>
+          </ol>
+        </nav>
+      </div>
     </div>
     <!-- page-title End -->
 
     <!-- service details page Start -->
     <div class="service-details-page">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-3 col-lg-4 col-12">
-                    <div class="widget widget-2 widget-menu">
-                        <a href="#">Film Production</a>
-                        <a href="#">Creative Direction</a>
-                        <a href="#">Equipment Hire</a>
-                        <a href="#">Filming Services</a>
-                        <a href="#">Flexible Office Spece</a>
-                        <a href="#">Studio Hire</a>
-                    </div>
-                    <div class="widget widget-2 widget-author">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna to aliqua. Ut enim minim veniam, quis nostrud exercitation.</p>
-                        <div class="thumb">
-                            <img src="images/10.png" alt="author">
-                        </div>
-                        <div class="details">
-                            <h5>Katlin Sansa</h5>
-                            <p>CEO at Bioscope</p>
-                        </div>
-                    </div>
-                    <div class="widget widget-2 widget-contact-form">
-                        <h5>Contact Us</h5>
-                        <form role="form" id="contactForm" class="" data-toggle="validator">
-                            <div class="contact-form">
-                                  <div class="form-group">
-                                      <input class="input-field" placeholder="Name" id="name" type="text" name="name" required data-error="Please enter your name">
-                                      <div class="help-block with-errors"></div>
-                                  </div>
-                                  <div class="form-group">
-                                      <input class="input-field" id="email" placeholder="Email" type="email" name="email" required data-error="Please enter your email">  
-                                      <div class="help-block with-errors"></div>
-                                  </div>
-                                  <div class="form-group">
-                                      <textarea id="message" class="input-field text-field" placeholder="Message" rows="6" required data-error="Write your message"></textarea>
-                                      <div class="help-block with-errors"></div>
-                                  </div>
-                                <button type="submit" id="submit" class="btn btn-yellow">Send Message</button>
-                                <div id="msgSubmit" class="h3 text-center hidden"></div> 
-                                <div class="clearfix"></div>
-                            </div>
-                        </form> 
-                    </div>
-                    <div class="widget-2 widget-pdf">
-                        <a href="#"><i class="fa fa-file-pdf-o"></i>Download Company Profile</a>
-                        <a href="#"><i class="fa fa-file-pdf-o"></i>Our Presentation PDF</a>
-                    </div>
-                </div>   
-                <div class="col-xl-9 col-lg-8 col-12">
-                    <div class="service-details-area">
-                        <img src="images/service/7.png" alt="img">
-                        <h5>Film Production</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Uteo enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                        <div class="row">
-                            <div class="col-6"><img src="images/service/8.png" alt="img"></div>
-                            <div class="col-6"><img src="images/service/9.png" alt="img"></div>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Uteo enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed to do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-3 col-lg-4 col-12">
+            <div class="widget widget-2 widget-menu">
+              <a href="#">Film Production</a>
+              <a href="#">Creative Direction</a>
+              <a href="#">Equipment Hire</a>
+              <a href="#">Filming Services</a>
+              <a href="#">Flexible Office Spece</a>
+              <a href="#">Studio Hire</a>
             </div>
+            <div class="widget widget-2 widget-author">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna to aliqua.
+                Ut enim minim veniam, quis nostrud exercitation.
+              </p>
+              <div class="thumb">
+                <img src="images/team/rupa.png" style="max-height: 53px;" alt="author" />
+              </div>
+              <div class="details">
+                <h5>Rupa Dhruva</h5>
+                <p>Director at 3 Patti</p>
+              </div>
+            </div>
+            <!-- <div class="widget widget-2 widget-contact-form">
+              <h5>Contact Us</h5>
+              <form
+                role="form"
+                id="contactForm"
+                class=""
+                data-toggle="validator"
+              >
+                <div class="contact-form">
+                  <div class="form-group">
+                    <input
+                      class="input-field"
+                      placeholder="Name"
+                      id="name"
+                      type="text"
+                      name="name"
+                      required
+                      data-error="Please enter your name"
+                    />
+                    <div class="help-block with-errors"></div>
+                  </div>
+                  <div class="form-group">
+                    <input
+                      class="input-field"
+                      id="email"
+                      placeholder="Email"
+                      type="email"
+                      name="email"
+                      required
+                      data-error="Please enter your email"
+                    />
+                    <div class="help-block with-errors"></div>
+                  </div>
+                  <div class="form-group">
+                    <textarea
+                      id="message"
+                      class="input-field text-field"
+                      placeholder="Message"
+                      rows="6"
+                      required
+                      data-error="Write your message"
+                    ></textarea>
+                    <div class="help-block with-errors"></div>
+                  </div>
+                  <button type="submit" id="submit" class="btn btn-yellow">
+                    Send Message
+                  </button>
+                  <div id="msgSubmit" class="h3 text-center hidden"></div>
+                  <div class="clearfix"></div>
+                </div>
+              </form>
+            </div> -->
+            <div class="widget-2 widget-pdf">
+              <a href="#"
+                ><i class="fa fa-file-pdf-o"></i>Download Company Profile</a
+              >
+              <a href="#"
+                ><i class="fa fa-file-pdf-o"></i>Our Presentation PDF</a
+              >
+            </div>
+          </div>
+          <div class="col-xl-9 col-lg-8 col-12 mg-bottom-120">
+            <div class="row" style="display: flex; justify-content: center" >
+              <div class="col-6">
+                <img src="images/icons/logo.svg" alt="img" />
+              </div>
+              
+            </div>
+            <div class="service-details-area">
+              <h5>3 Patti Films</h5>
+              <p>
+                '3 Patti Films' is an innovative platform for newcomers and also
+                the experienced ones. As our theme celebrates 'Kal, Aaj aur Kal,
+                we welcome the experienced talent from yester years, fresh
+                creativity of today and innovative ideas of tomorrow. Our name
+                says it all. You may think 3 Patti means gambling and gaming....
+                yes, we all always gamble with our life and decisions. Here we
+                entrepreneurs have come together to support good talent and give
+                them an opportunity.
+              </p>
+
+              <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Uteo enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p> -->
+              <!-- <div class="row" style="display: flex; justify-content: center" >
+                <div class="col-6">
+                  <img src="images/icons/logo.svg" alt="img" />
+                </div>
+                
+              </div> -->
+              <p>
+                '3 Patti Films' means 3 leaves which means a sign of prosperity
+                and peace. Our logo has shapes of Heart, Diamond, and Spade
+                which depicts Love ️<svg
+                  height="14px"
+                  xmlns:dc="http://purl.org/dc/elements/1.1/"
+                  xmlns:cc="http://creativecommons.org/ns#"
+                  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                  xmlns:svg="http://www.w3.org/2000/svg"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 47.5 47.5"
+                  style="enable-background: new 0 0 47.5 47.5;"
+                  xml:space="preserve"
+                  version="1.1"
+                  id="svg2"
+                >
+                  <defs id="defs6">
+                    <clipPath id="clipPath16" clipPathUnits="userSpaceOnUse">
+                      <path id="path18" d="M 0,38 38,38 38,0 0,0 0,38 Z" />
+                    </clipPath>
+                  </defs>
+                  <g transform="matrix(1.25,0,0,-1.25,0,47.5)" id="g10">
+                    <g id="g12">
+                      <g clip-path="url(#clipPath16)" id="g14">
+                        <g transform="translate(3.0669,25.6807)" id="g20">
+                          <path
+                            id="path22"
+                            style="
+                              fill: #dd2e44;
+                              fill-opacity: 1;
+                              fill-rule: nonzero;
+                              stroke: none;
+                            "
+                            d="M 0,0 C 0,8.799 12.184,12.06 15.933,1.874 19.682,12.06 31.866,8.799 31.866,0 31.866,-9.56 15.933,-21.681 15.933,-21.681 15.933,-21.681 0,-9.56 0,0"
+                          />
+                        </g>
+                      </g>
+                    </g>
+                  </g>
+                </svg>
+                Prosperity
+                <svg
+                  height="14px"
+                  xmlns:dc="http://purl.org/dc/elements/1.1/"
+                  xmlns:cc="http://creativecommons.org/ns#"
+                  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                  xmlns:svg="http://www.w3.org/2000/svg"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 47.5 47.5"
+                  style="enable-background: new 0 0 47.5 47.5;"
+                  xml:space="preserve"
+                  version="1.1"
+                  id="svg2"
+                >
+                  <defs id="defs6">
+                    <clipPath id="clipPath16" clipPathUnits="userSpaceOnUse">
+                      <path id="path18" d="M 0,38 38,38 38,0 0,0 0,38 Z" />
+                    </clipPath>
+                  </defs>
+                  <g transform="matrix(1.25,0,0,-1.25,0,47.5)" id="g10">
+                    <g id="g12">
+                      <g clip-path="url(#clipPath16)" id="g14">
+                        <g transform="translate(19.437,1.2529)" id="g20">
+                          <path
+                            id="path22"
+                            style="
+                              fill: #dd2e44;
+                              fill-opacity: 1;
+                              fill-rule: nonzero;
+                              stroke: none;
+                            "
+                            d="m 0,0 c -0.242,-0.337 -0.632,-0.337 -0.874,0 l -12.249,17.135 c -0.242,0.338 -0.242,0.886 0,1.224 l 12.249,17.135 c 0.242,0.338 0.632,0.338 0.874,0 L 12.25,18.359 c 0.241,-0.338 0.241,-0.886 0,-1.224 L 0,0 Z"
+                          />
+                        </g>
+                      </g>
+                    </g>
+                  </g>
+                </svg>
+                and Winner Instinct
+                <svg
+                  height="14px"
+                  xmlns:dc="http://purl.org/dc/elements/1.1/"
+                  xmlns:cc="http://creativecommons.org/ns#"
+                  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                  xmlns:svg="http://www.w3.org/2000/svg"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 47.5 47.5"
+                  style="enable-background: new 0 0 47.5 47.5;"
+                  xml:space="preserve"
+                  version="1.1"
+                  id="svg2"
+                >
+                  <defs id="defs6">
+                    <clipPath id="clipPath16" clipPathUnits="userSpaceOnUse">
+                      <path id="path18" d="M 0,38 38,38 38,0 0,0 0,38 Z" />
+                    </clipPath>
+                  </defs>
+                  <g transform="matrix(1.25,0,0,-1.25,0,47.5)" id="g10">
+                    <g id="g12">
+                      <g clip-path="url(#clipPath16)" id="g14">
+                        <g transform="translate(33.7988,16.6641)" id="g20">
+                          <path
+                            id="path22"
+                            style="
+                              fill: #000000;
+                              fill-opacity: 1;
+                              fill-rule: nonzero;
+                              stroke: none;
+                            "
+                            d="m 0,0 c 0,8.88 -14.799,20.138 -14.799,20.138 0,0 -14.799,-11.258 -14.799,-20.138 0,-6.946 8.175,-10.172 12.766,-5.173 -0.335,-4.179 -4.72,-7.491 -8.967,-7.491 l 0.5,0 c -0.828,0 -1.5,-0.672 -1.5,-1.5 0,-0.828 0.672,-1.5 1.5,-1.5 l 21,0 c 0.828,0 1.5,0.672 1.5,1.5 0,0.828 -0.672,1.5 -1.5,1.5 l 0.5,0 c -4.246,0 -8.632,3.312 -8.967,7.491 C -8.175,-10.172 0,-6.946 0,0"
+                          />
+                        </g>
+                      </g>
+                    </g>
+                  </g></svg
+                >
+              </p>
+              <p>
+                We are here to make:<br />
+                Best Films with <br />
+                Creative Directors<br />
+                Talented Actors <br />
+                Amazing Writers<br />
+                And Innovative Producers.<br />
+              </p>
+              <p>
+                We have arrived with experience in abundance and stories
+                unlimited ....<br />
+
+                Sky is the limit for us...<br />
+
+                Feel free to join us and Celebrate Cinema 'Kal, Aaj and Kal,
+              </p>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
     <!-- service details page End -->
 
-    <!-- Partner Section start -->
-    <div class="partner-section mg-top-90">
+    
+    <!-- fun-factor -->
+    <div class="fact-section award-bg mg-bottom-120">
+      <div class="container">
+          <div class="row">
+              <div class="col-md-3 col-sm-6">
+                  <div class="fact-details text-center">
+                      <img src="images/icons/1.png" alt="fact">
+                      <p class="fact-count">154879</p>
+                      <p class="fact-info">Visitor</p>
+                  </div>
+              </div>
+              <div class="col-md-3 col-sm-6">
+                  <div class="fact-details text-center">
+                      <img src="images/icons/2.png" alt="fact">
+                      <p class="fact-count">254879</p>
+                      <p class="fact-info">Download</p>
+                  </div>
+              </div>
+              <div class="col-md-3 col-sm-6">
+                  <div class="fact-details text-center">
+                      <img src="images/icons/3.png" alt="fact">
+                      <p class="fact-count">1548</p>
+                      <p class="fact-info">Trailer</p>
+                  </div>
+              </div>
+              <div class="col-md-3 col-sm-6">
+                  <div class="fact-details mg-bottom-remove text-center">
+                      <img src="images/icons/4.png" alt="fact">
+                      <p class="fact-count">4.9</p>
+                      <p class="fact-info">Rating</p>
+                  </div>
+              </div>                 
+          </div>
+      </div>
+  </div>
+  <!-- /.fun-factor -->
+
+
+    <!-- Team section start -->
+    <div class="team-section mg-bottom-120">
         <div class="container">
-            <div class="partner-slider owl-carousel owl-theme">
-                <div class="item">
-                    <div class="thumb">
-                        <img src="images/client/6.png" alt="partner">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title">
+                        <h2>Producers</h2>
+                        <!-- <a href="#">See All Member</a> -->
                     </div>
                 </div>
-                <div class="item">
-                    <div class="thumb">
-                        <img src="images/client/7.png" alt="partner">
+                <div class="col-lg-4 col-sm-12 mb-5">
+                    <div class="single-team text-center">
+                        <div class="thumb">
+                            <img style="
+              max-width: 255px;
+              
+              width: auto;
+              height: auto;
+            " src="images/team/rupa2.png" alt="team">
+                        </div>
+                        <div class="team-social">
+                            <a href="#" class="social-icon facebook">
+                                <i class="fa fa-facebook"></i> 
+                                <span class="target-title">Facebook</span>
+                            </a>
+                            <a href="#" class="social-icon">
+                                <i class="fa fa-twitter"></i> 
+                                <span class="target-title">Twitter</span>
+                            </a>
+                            <a href="#" class="social-icon">
+                                <i class="fa fa-linkedin"></i> 
+                                <span class="target-title">Linkedin</span>
+                            </a>
+                            <a href="#" class="social-icon">
+                                <i class="fa fa-pinterest"></i> 
+                                <span class="target-title">Pinterest</span>
+                            </a>
+                        </div>
+                        <div class="team-details">
+                            <h4>Rupa Dhruva</h4>
+                            <p>Director</p>
+                        </div>    
                     </div>
                 </div>
-                <div class="item">
-                    <div class="thumb">
-                        <img src="images/client/8.png" alt="partner">
+                <div class="col-lg-4 col-sm-12 mb-5">
+                    <div class="single-team text-center">
+                        <div class="thumb">
+                            <img style="
+              max-width: 255px;
+            
+              width: auto;
+              height: auto;
+            " src="images/team/leela.png" alt="team">
+                        </div>
+                        <div class="team-social">
+                            <a href="#" class="social-icon facebook">
+                                <i class="fa fa-facebook"></i> 
+                                <span class="target-title">Facebook</span>
+                            </a>
+                            <a href="#" class="social-icon">
+                                <i class="fa fa-twitter"></i> 
+                                <span class="target-title">Twitter</span>
+                            </a>
+                            <a href="#" class="social-icon">
+                                <i class="fa fa-linkedin"></i> 
+                                <span class="target-title">Linkedin</span>
+                            </a>
+                            <a href="#" class="social-icon">
+                                <i class="fa fa-pinterest"></i> 
+                                <span class="target-title">Pinterest</span>
+                            </a>
+                        </div>
+                        <div class="team-details">
+                            <h4><a href="#">Leela Gajraj</a></h4>
+                            <p>Producer</p>
+                        </div>    
                     </div>
                 </div>
-                <div class="item">
-                    <div class="thumb">
-                        <img src="images/client/6.png" alt="partner">
+                <div class="col-lg-4 col-sm-12 mb-5">
+                    <div class="single-team text-center">
+                        <div class="thumb">
+                            <img style="
+              max-width: 255px;
+              width: auto;
+              height: auto;
+            " src="images/team/vijay2.png" alt="team">
+                        </div>
+                        <div class="team-social">
+                            <a href="#" class="social-icon facebook">
+                                <i class="fa fa-facebook"></i> 
+                                <span class="target-title">Facebook</span>
+                            </a>
+                            <a href="#" class="social-icon">
+                                <i class="fa fa-twitter"></i> 
+                                <span class="target-title">Twitter</span>
+                            </a>
+                            <a href="#" class="social-icon">
+                                <i class="fa fa-linkedin"></i> 
+                                <span class="target-title">Linkedin</span>
+                            </a>
+                            <a href="#" class="social-icon">
+                                <i class="fa fa-pinterest"></i> 
+                                <span class="target-title">Pinterest</span>
+                            </a>
+                        </div>
+                        <div class="team-details">
+                            <h4><a href="#">Vijay sheth</a></h4>
+                            <p>Producer</p>
+                        </div>    
                     </div>
                 </div>
-                <div class="item">
-                    <div class="thumb">
-                        <img src="images/client/7.png" alt="partner">
+                <div class="col-lg-4 col-sm-12 mb-5">
+                    <div class="single-team mg-b768-remove text-center">
+                        <div class="thumb">
+                            <img style="
+              max-width: 255px;
+              width: auto;
+              height: auto;
+            " src="images/team/helen.png" alt="team">
+                        </div>
+                        <div class="team-social">
+                            <a href="#" class="social-icon facebook">
+                                <i class="fa fa-facebook"></i> 
+                                <span class="target-title">Facebook</span>
+                            </a>
+                            <a href="#" class="social-icon">
+                                <i class="fa fa-twitter"></i> 
+                                <span class="target-title">Twitter</span>
+                            </a>
+                            <a href="#" class="social-icon">
+                                <i class="fa fa-linkedin"></i> 
+                                <span class="target-title">Linkedin</span>
+                            </a>
+                            <a href="#" class="social-icon">
+                                <i class="fa fa-pinterest"></i> 
+                                <span class="target-title">Pinterest</span>
+                            </a>
+                        </div>
+                        <div class="team-details">
+                            <h4><a href="#">Helen Lobo</a></h4>
+                            <p>Producer</p>
+                        </div>    
                     </div>
                 </div>
-                <div class="item">
-                    <div class="thumb">
-                        <img src="images/client/8.png" alt="partner">
-                    </div>
-                </div>
+                <div class="col-lg-4 col-sm-12 mb-5">
+                  <div class="single-team mg-b768-remove text-center">
+                      <div class="thumb">
+                          <img style="
+              max-height: 255px;
+              width: auto;
+              height: auto;
+            " src="images/team/manish2.png" alt="team">
+                      </div>
+                      <div class="team-social">
+                          <a href="#" class="social-icon facebook">
+                              <i class="fa fa-facebook"></i> 
+                              <span class="target-title">Facebook</span>
+                          </a>
+                          <a href="#" class="social-icon">
+                              <i class="fa fa-twitter"></i> 
+                              <span class="target-title">Twitter</span>
+                          </a>
+                          <a href="#" class="social-icon">
+                              <i class="fa fa-linkedin"></i> 
+                              <span class="target-title">Linkedin</span>
+                          </a>
+                          <a href="#" class="social-icon">
+                              <i class="fa fa-pinterest"></i> 
+                              <span class="target-title">Pinterest</span>
+                          </a>
+                      </div>
+                      <div class="team-details">
+                          <h4><a href="#">Manish Shah</a></h4>
+                          <p>Producer</p>
+                      </div>    
+                  </div>
+              </div>
             </div>
         </div>
     </div>
-    <!-- Partner Section End -->
+    <!-- Team section End -->
 
     <!-- Footer-section Start -->
     <div class="footer-section footer-bg">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 col-12">
-                    <div class="widget_about mg-bt-small">
-                        <a href="home1.html"><img src="images/footer-logo.png" alt="footer-logo"></a>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipi scing elit, sed do eiusmod tempor incididunt  labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipi </p>
-                        <div class="social-icon-wrap">
-                            <a class="facebook" href="#"><i class="fa fa-facebook"></i></a>
-                            <a class="twitter" href="#"><i class="fa fa-twitter"></i></a>
-                            <a class="pinterest" href="#"><i class="fa fa-pinterest-p"></i></a>
-                            <a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-lg-2 mg-bt-small">
-                    <h5>Useful Link</h5>
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Movie</a></li>
-                        <li><a href="#">Newsletter</a></li>
-                        <li><a href="#">Biography</a></li>
-                        <li><a href="#">contact</a></li>
-                    </ul>
-                </div>
-                <div class="col-12 col-lg-3 mg-bt-small">
-                    <h5>Category</h5>
-                    <ul class="mr-5">
-                        <li><a href="#">Action </a></li>
-                        <li><a href="#">Comedy </a></li>
-                        <li><a href="#">Documentary </a></li>
-                        <li><a href="#">Newsletter </a></li>
-                        <li><a href="#">Biography </a></li>
-                        <li><a href="#">Animation </a></li>
-                    </ul>
-                    <ul>
-                        <li><a href="#">Action </a></li>
-                        <li><a href="#">Comedy </a></li>
-                        <li><a href="#">Documentary </a></li>
-                        <li><a href="#">Newsletter </a></li>
-                        <li><a href="#">Biography </a></li>
-                        <li><a href="#">Animation </a></li>
-                    </ul>
-                </div>
-                <div class="col-12 col-lg-3">
-                    <h5>Newsletter</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipi scing elit, sed do eiusmod tempor incididunt  labore et dolore magna aliqua. </p>
-                    <div class="subscribe subscribtion newsletter-form">
-                        <div id="mc_embed_signup">
-                            <form action="https://facebook.us17.list-manage.com/subscribe/post-json?u=77e6ecc9cd3106db009820476&amp;id=8b4b831593&c=?"
-                                method="get" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate">
-                                <div class="form-group">
-                                    <div class="input-group">
-                                        <input type="email" value="" name="EMAIL" class="form-control email" id="mce-EMAIL" placeholder="Your Email" required>
-                                        <div class="input-group-append">
-                                            <input type="submit" value="Send" name="subscribe" id="mc-embedded-subscribe" class="input-group-text .d-block mc-button btn">
-                                        </div>
-                                    </div>
-                                    <div id="subscribe-result"></div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-12">
+            <div class="widget_about mg-bt-small">
+              <a href="home1.html"
+                ><img src="images/footer-logo.png" alt="footer-logo"
+              /></a>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipi scing elit, sed do
+                eiusmod tempor incididunt labore et dolore magna aliqua. Lorem
+                ipsum dolor sit amet, consectetur adipi
+              </p>
+              <div class="social-icon-wrap">
+                <a class="facebook" href="#"><i class="fa fa-facebook"></i></a>
+                <a class="twitter" href="#"><i class="fa fa-twitter"></i></a>
+                <a class="pinterest" href="#"
+                  ><i class="fa fa-pinterest-p"></i
+                ></a>
+                <a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a>
+              </div>
             </div>
+          </div>
+          <div class="col-12 col-lg-2 mg-bt-small">
+            <h5>Useful Link</h5>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Movie</a></li>
+              <li><a href="#">Newsletter</a></li>
+              <li><a href="#">Biography</a></li>
+              <li><a href="#">contact</a></li>
+            </ul>
+          </div>
+          <div class="col-12 col-lg-3 mg-bt-small">
+            <h5>Category</h5>
+            <ul class="mr-5">
+              <li><a href="#">Action </a></li>
+              <li><a href="#">Comedy </a></li>
+              <li><a href="#">Documentary </a></li>
+              <li><a href="#">Newsletter </a></li>
+              <li><a href="#">Biography </a></li>
+              <li><a href="#">Animation </a></li>
+            </ul>
+            <ul>
+              <li><a href="#">Action </a></li>
+              <li><a href="#">Comedy </a></li>
+              <li><a href="#">Documentary </a></li>
+              <li><a href="#">Newsletter </a></li>
+              <li><a href="#">Biography </a></li>
+              <li><a href="#">Animation </a></li>
+            </ul>
+          </div>
+          <div class="col-12 col-lg-3">
+            <h5>Newsletter</h5>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipi scing elit, sed do
+              eiusmod tempor incididunt labore et dolore magna aliqua.
+            </p>
+            <div class="subscribe subscribtion newsletter-form">
+              <div id="mc_embed_signup">
+                <form
+                  action="https://facebook.us17.list-manage.com/subscribe/post-json?u=77e6ecc9cd3106db009820476&amp;id=8b4b831593&c=?"
+                  method="get"
+                  id="mc-embedded-subscribe-form"
+                  name="mc-embedded-subscribe-form"
+                  class="validate"
+                >
+                  <div class="form-group">
+                    <div class="input-group">
+                      <input
+                        type="email"
+                        value=""
+                        name="EMAIL"
+                        class="form-control email"
+                        id="mce-EMAIL"
+                        placeholder="Your Email"
+                        required
+                      />
+                      <div class="input-group-append">
+                        <input
+                          type="submit"
+                          value="Send"
+                          name="subscribe"
+                          id="mc-embedded-subscribe"
+                          class="input-group-text .d-block mc-button btn"
+                        />
+                      </div>
+                    </div>
+                    <div id="subscribe-result"></div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
         </div>
-        <!-- Footer-bottom -->
-        <div class="footer-bottom text-center">
-            <p>Copyright ThemeLayer. All rights reserved 2018</p>
-        </div>
+      </div>
+      <!-- Footer-bottom -->
+      <div class="footer-bottom text-center">
+        <p>Copyright ThemeLayer. All rights reserved 2018</p>
+      </div>
     </div>
     <!-- Footer-section End -->
 
@@ -386,7 +946,10 @@
     <script type="text/javascript" src="js/jquery.counterup.min.js"></script>
     <script type="text/javascript" src="js/flipclock.min.js"></script>
     <script type="text/javascript" src="js/jquery.waypoints.js"></script>
-    <script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
+    <script
+      type="text/javascript"
+      src="js/jquery.magnific-popup.min.js"
+    ></script>
     <script type="text/javascript" src="js/jquery.fancybox.min.js"></script>
     <script type="text/javascript" src="js/scroll.js"></script>
     <script type="text/javascript" src="js/wow.min.js"></script>
@@ -396,9 +959,7 @@
     <script type="text/javascript" src="js/contact-form-script.js"></script>
     <script type="text/javascript" src="js/jquery.scrollUp.min.js"></script>
 
-
     <!-- Custom JS -->
     <script type="text/javascript" src="js/custom.js"></script>
-    
-</body>
+  </body>
 </html>
