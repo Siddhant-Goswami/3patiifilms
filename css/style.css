@@ -233,6 +233,12 @@ a:hover {
     background-repeat: no-repeat;
    }
 
+   .page-title-bg-services {
+    background-image: url(../images/bg/services.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+   }
+
 .footer-bg {
   background: #f5f5f5; }
 
