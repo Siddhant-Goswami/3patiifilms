@@ -169,9 +169,9 @@
                     </div> 
                     <div class="contact-details-info">
                         <div class="contact-address">
-                            <p><i class="fa fa-map-marker"></i>7165 Beverly Blvd, Los Angeles, CA 90036, USA</p>
-                            <p><i class="fa fa-envelope-o"></i>yourname@bioscope.com</p>
-                            <p><i class="fa fa-phone"></i>7165 Beverly Blvd, Los Angeles, CA 90036, USA</p>
+                            <!-- <p><i class="fa fa-map-marker"></i>7165 Beverly Blvd, Los Angeles, CA 90036, USA</p> -->
+                            <p><i class="fa fa-envelope-o"></i>info@teenpatti.com</p>
+                            <!-- <p><i class="fa fa-phone"></i></p> -->
                         </div>
                         <div class="social-icon-wrap-2">
                             <a class="facebook" href="#"><i class="fa fa-facebook"></i></a>
@@ -185,7 +185,7 @@
                     <div class="section-title">
                        <h2>Get in Touch</h2>
                     </div>
-                    <form role="form" id="contactForm" class="" data-toggle="validator">
+                    <form role="form" id="contactForm1" class="" data-toggle="validator">
                         <div class="contact-form">
                             <div class="row">
                                 <div class="col-lg-6 col-md-6 col-12">
@@ -200,6 +200,12 @@
                                         <div class="help-block with-errors"></div>
                                     </div>
                                 </div>
+                                <div class="col-lg-6 col-md-6 col-12">
+                                  <div class="form-group">
+                                      <input class="form-control input-control" id="phone" placeholder="Phone number" type="phone" name="phone" required data-error="Please enter your phone number">  
+                                      <div class="help-block with-errors"></div>
+                                  </div>
+                              </div>
                             </div>
                             <div class="form-group">
                                 <textarea id="message" class="form-control" placeholder="Message" rows="6" required data-error="Write your message"></textarea>
@@ -217,7 +223,7 @@
     <!-- contact section End -->
 
     <!-- Map section Start -->
-    <div id="map"></div>
+    <!-- <div id="map"></div> -->
     <!-- Map section End -->
 
      <!-- Footer-section Start -->
@@ -323,6 +329,77 @@
     </div>
     <!-- Footer-section End -->
 
+    <script src="https://www.gstatic.com/firebasejs/5.11.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.11.0/firebase-firestore.js"></script>
+    
+    <script>
+      
+  var firebaseConfig = {
+      apiKey: "AIzaSyBsGzV5UqQ3utkcGa9AKyonjPeXDX4MZGM",
+      authDomain: "teenpatti-32781.firebaseapp.com",
+      databaseURL: "https://teenpatti-32781.firebaseio.com",
+      projectId: "teenpatti-32781",
+      storageBucket: "teenpatti-32781.appspot.com",
+      messagingSenderId: "156040820559",
+      appId: "1:156040820559:web:c601bf9a1f3386e950f73a",
+      measurementId: "G-JNFS5LV3T6"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  // firebase.analytics();
+
+// Reference messages collection
+const db = firebase.firestore();
+
+// Listen for form submit
+document.getElementById('contactForm1').addEventListener('submit', submitForm);
+
+// Submit form
+function submitForm(e){
+  e.preventDefault();
+
+  // Get values
+  var name = getInputVal('name');
+  var email = getInputVal('email');
+  var phone = getInputVal('phone');
+  var message = getInputVal('message');
+
+  // Save message
+  saveMessage(name, email, phone, message);
+
+  // Show alert
+  alert("Message Sent successfully!");
+  // document.querySelector('.alert').style.display = 'block';
+
+  // Hide alert after 3 seconds
+  // setTimeout(function(){
+  //   document.querySelector('.alert').style.display = 'none';
+  // },3000);
+
+  // Clear form
+  document.getElementById('contactForm1').reset();
+}
+
+// Function to get get form values
+function getInputVal(id){
+  return document.getElementById(id).value;
+}
+
+// Save message to firebase
+function saveMessage(name, email, phone, message){
+  var messageData = {
+    name: name,
+    email:email,
+    phone:phone,
+    message:message
+  };
+  db.collection("messages")
+    .add(messageData)
+    .catch((err) => console.log(err));
+  
+}
+
+    </script>
     <!--Common JS Plugin-->
     <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>

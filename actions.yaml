@@ -1,1 +1,0 @@
-- run: sh setEnvironment.sh ${{ secrets.NEWS_API_KEY }}

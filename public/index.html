@@ -529,7 +529,7 @@
                   <div class="series-details">
                     <div class="entry-thumb">
                       <img
-                        src="https://a10.gaanacdn.com/gn_img/albums/Rz4W8vKxD5/z4W8LnBpWx/size_xxl.webp"
+                        src="https://c-sf.smule.com/rs-s78/arr/fa/66/28822b38-fc74-4012-ba51-26bdd15984a8_1024.jpg"
                         alt="img"
                         style="  display: block;
          min-width: 262px;
@@ -1078,7 +1078,7 @@
 
 
     <!-- upcomming trailer Start -->
-    <div class="upcomming-trailer-section upcomming-trailer-bg">
+    <div id="poster-id"class="upcomming-trailer-section upcomming-trailer-bg">
       <div id="hidden-container" class="container" style="visibility: hidden;">
         <div class="row justify-content-center">
           <div class="col-md-10 col-12">
@@ -1413,11 +1413,16 @@
 
     <script>
        function renderPoster(){
-      var hiddenContainer = document.getElementById("hidden-container");
-      if(screen.width < 500)
-        hiddenContainer.style.display = "none";
+      var trailerSection = document.getElementById("trailer");
+      var poster = document.getElementById("poster-id");
+      // hiddenContainer.style.display = "none";
+
+      if(screen.width < 500){
+        poster.style.display = "none";
+        trailerSection.classList.remove("default-padding");
+      }
       else
-        hiddenContainer.style.display = "block";
+        poster.style.display = "block";
     }
     window.onload = renderPoster;
     </script>
