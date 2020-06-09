@@ -4242,3 +4242,6 @@ input:checked + .slider:before {
   width: auto;
   height: auto;
 } */
+.news-item{
+  max-width:263px;
+}

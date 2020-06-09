@@ -1195,18 +1195,20 @@
     function renderPoster() {
       var trailerSection = document.getElementById("trailer");
       var poster = document.getElementById("poster-id");
-      // hiddenContainer.style.display = "none";
+      var newsItems = document.querySelectorAll(".media-left > img");
 
       if (screen.width < 500) {
         poster.style.display = "none";
         trailerSection.classList.remove("default-padding");
+        [].forEach.call(newsItems, function (el) {
+          el.classList.remove("news-item");
+        });
       }
       else
         poster.style.display = "block";
     }
     window.onload = renderPoster;
   </script>
-  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
   <script>
     function renderLatestNews(title, imgUrl, description, source) {
@@ -1241,13 +1243,7 @@
       var newsTemplate = `<div class="blog-details-wrap blog-right-content">
                                   <div class="media">
                                       <div class="media-left">
-                                      <img src=${imgUrl} alt="blog" style="display: block;
-                                                                           max-width:263px;
-                                                                           max-height:151px;
-                                                                           min-width:263px;
-                                                                           min-height:151px;
-                                                                           width: auto;
-                                                                           height: auto;" />
+                                      <img src=${imgUrl} alt="blog" class="news-item"/>
                                       </div>
                                       <div class="media-body">
                                       <div class="blog-details">
@@ -1298,7 +1294,7 @@
   <script type="text/javascript" src="js/form-validator.min.js"></script>
   <script type="text/javascript" src="js/contact-form-script.js"></script>
   <script type="text/javascript" src="js/tawk.js"></script>
-  
+
 
   <!-- Custom JS -->
   <script type="text/javascript" src="js/custom.js"></script>

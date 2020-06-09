@@ -712,9 +712,9 @@
         /* -------------------------------------------------------------
           Scroll To Top
         ------------------------------------------------------------- */
-        $.scrollUp({
-          scrollText: '<i class="fa fa-angle-up"></i>',
-        });
+        // $.scrollUp({
+        //   scrollText: '<i class="fa fa-angle-up"></i>',
+        // });
 
         $('#vid-list li a').on('click', function(e){
             e.preventDefault();
